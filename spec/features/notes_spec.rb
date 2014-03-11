@@ -7,7 +7,9 @@ feature "Creating a note" do
   
 
   scenario do
-    visit '/notes'
-
+    visit '/notes/new'
+    fill_in "note", with: "awesome note"
+    click_on "Save"
+    
   end
 end
